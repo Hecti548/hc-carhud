@@ -1,0 +1,182 @@
+* {
+    font-family: 'fuente';
+    color: white;
+    src: url('digital-7.ttf');
+}
+
+@font-face {
+    font-family: fuente;
+    src: url('digital-7.ttf');
+}
+
+.todo {
+    font-family: fuente;
+    overflow: hidden;
+    width: 230px;
+    height: 120px;
+    max-height: 200px;
+    background-color: rgba(0, 0, 0, 0.432);
+    border-radius: 4px;
+    box-shadow: #ffffff80 0px 0px 2.5px;
+    position: absolute;
+    margin-left: 45%;
+    margin-top: 950px;
+    opacity: 0;
+    -webkit-animation: paraDerecha 1s forwards;
+    animation: paraDerecha 1s forwards;
+}
+
+.todo.isInCoche {
+    -webkit-animation: paraIzqueirda 1s forwards;
+    animation: paraIzqueirda 1s forwards;
+}
+
+i {
+    float: left;
+    margin-top: 67px;
+    margin-left: 180px;
+}
+
+a {
+    float: left;
+    margin-top: 10px;
+    margin-left: -15px;
+}
+
+g {
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.velo {
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 6vh;
+    text-shadow: 0 0 10px rgb(249, 255, 252);
+}
+
+.km {
+    font-weight: 400;
+    font-size: 6vh;
+    left: 20px;
+    float: left;
+    margin-top: 50px;
+    margin-left: 38px;
+}
+
+.marchatext {
+    font-weight: 400;
+    font-size: 2vh;
+    float: left;
+    margin-top: 75px;
+    margin-left: -20px;
+}
+
+.marcha {
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 75px;
+    font-weight: 400;
+    font-size: 2vh;
+}
+
+.vidatexto{
+    font-weight: 250;
+    font-size: 20px;
+    float: left;
+    margin-top: 9px;
+    margin-left: -44px;
+}
+
+.fueltexto{
+    font-weight: 250;
+    font-size: 20px;
+    float: left;
+    margin-top: 76px;
+    margin-left: 84px;
+}
+
+.progress {
+    color: white;
+    width: 400px;
+    position: absolute;
+    margin-left: 4px;
+    margin-top: 10px;
+}
+
+.progress header {
+    margin-left: 2.5%;
+    margin-bottom: 25%;
+}
+
+.progress .bar {
+    position: absolute;
+    background-color: #ffffff00;
+    border-radius: 10px;
+    margin-left: 4%;
+    width: 49%;
+}
+
+.progress .bar .percent-gasofa {
+    position: absolute;
+    color: white;
+    background-color: rgb(255, 255, 255);
+    width: 25%;
+    border-radius: 10px;
+    height: 3px;
+    margin-bottom: 20px;
+    opacity: 1;
+}
+
+.progress-marcha {
+    position: absolute;
+    width: 400px;
+    margin-top: 5px;
+}
+
+@-webkit-keyframes paraIzqueirda {
+    0% {
+        bottom: 0px;
+        opacity: 0;
+    }
+    100% {
+        bottom: 20px;
+        opacity: 1;
+    }
+}
+
+@keyframes paraIzqueirda {
+    0% {
+        bottom: 0px;
+        opacity: 0;
+    }
+    100% {
+        bottom: 20px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes paraDerecha {
+    0% {
+        bottom: 20px;
+        opacity: 1;
+    }
+    100% {
+        bottom: 25px;
+        opacity: 0;
+    }
+}
+
+@keyframes paraDerecha {
+    0% {
+        bottom: 20px;
+        opacity: 1;
+    }
+    100% {
+        bottom: 25px;
+        opacity: 0;
+    }
+}
